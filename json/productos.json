@@ -9,8 +9,8 @@
     },
     {
       "id": 2,
-      "nombre": "Buso Vegeta",
-      "categoria": "Busos",
+      "nombre": "Buzo Vegeta",
+      "categoria": "Buzos",
       "precio": 2500,
       "cantidad": 5,
       "imagen": "./assets/dragon ball.jpg"
@@ -33,8 +33,8 @@
     },
     {
       "id": 5,
-      "nombre": "Buso Vegeta Super Saiyan",
-      "categoria": "Busos",
+      "nombre": "Buzo Vegeta Super Saiyan",
+      "categoria": "Buzos",
       "precio": 2500,
       "cantidad": 5,
       "imagen": "./assets/dragon ball.jpg"
@@ -57,8 +57,8 @@
     },
     {
       "id": 8,
-      "nombre": "Buso Vegeta Majin",
-      "categoria": "Busos",
+      "nombre": "Buzo Vegeta Majin",
+      "categoria": "Buzos",
       "precio": 2500,
       "cantidad": 5,
       "imagen": "./assets/dragon ball.jpg"
