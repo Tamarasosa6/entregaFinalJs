@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "nombre": "Remera Goku",
+      "categoria": "Remeras",
+      "precio": 1200,
+      "cantidad": 10,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Buso Vegeta",
+      "categoria": "Busos",
+      "precio": 2500,
+      "cantidad": 5,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Camiseta Piccolo",
+      "categoria": "Camisetas",
+      "precio": 1500,
+      "cantidad": 8,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Remera Goku Super Saiyan",
+      "categoria": "Remeras",
+      "precio": 1200,
+      "cantidad": 10,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Buso Vegeta Super Saiyan",
+      "categoria": "Busos",
+      "precio": 2500,
+      "cantidad": 5,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Camiseta Piccolo Fusion",
+      "categoria": "Camisetas",
+      "precio": 1500,
+      "cantidad": 8,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Remera Goku Niño",
+      "categoria": "Remeras",
+      "precio": 1200,
+      "cantidad": 10,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Buso Vegeta Majin",
+      "categoria": "Busos",
+      "precio": 2500,
+      "cantidad": 5,
+      "imagen": "./assets/dragon ball.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Camiseta Piccolo vs Goku",
+      "categoria": "Camisetas",
+      "precio": 1500,
+      "cantidad": 8,
+      "imagen": "./assets/dragon ball.jpg"
+    }
+  ]
+  

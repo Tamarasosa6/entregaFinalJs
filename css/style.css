@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #e0f7fa; 
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    header {
+        background: linear-gradient(to right, #ff9800, #ff5722); 
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid #2196f3;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3.5em; 
+        color: #e64a19; 
+        text-shadow: 3px 3px 0 white,  
+                    5px 5px 5px rgba(255, 255, 0, 0.7); 
+        background: linear-gradient(45deg, #080808, #ff6600);
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        border-radius: 10px; 
+        padding: 10px; 
+        text-align: center; 
+        font-family: 'Comic Sans MS', cursive, sans-serif; 
+        animation: pulse 1.5s infinite; 
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05); 
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+    #crear-cuenta {
+        margin: 20px auto;
+        width: 90%;
+        max-width: 400px; 
+    }
+
+    #crear-cuenta input {
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ff5722;
+    }
+
+    #crear-cuenta button {
+        background-color: #2196f3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    #crear-cuenta button:hover {
+        background-color: #1976d2;
+    }
+
+    nav {
+        background-color: #212121;
+        padding: .3125rem .3125rem;
+    }
+
+    nav .form-select {
+        background-color:#1976d2; 
+        color: white;
+        border: 1px solid #ff9800;
+        width: auto;
+        display: inline-block; 
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+
+    nav .form-select:hover {
+        background-color: #444;
+    }
+
+    nav #nav-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav #nav-menu li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    nav #nav-menu a {
+        color: #1976d2;
+        text-decoration: none;
+    }
+
+    nav #nav-menu a:hover {
+        color: #ff9800;
+    }
+
+    main {
+        padding: 0px;
+    }
+
+    .modal-content {
+        border: 1px solid #ff5722;
+    }
+
+    .modal-header {
+        background-color: #ff9800;
+        color: #fff;
+    }
+
+    .modal-body {
+        background-color:#f5f5f5;
+    }
+
+    .modal-footer .btn-primary {
+        background-color: #2196f3;
+    }
+
+    .modal-footer .btn-primary:hover {
+        background-color: #1976d2;
+    }
+
+    #productosContenedor {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+
+    .producto {
+        background: #fff;
+        border: 1px solid #ff9800;
+        border-radius: 5px;
+        box-shadow: 0 .375rem .75rem rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        flex: 0 1 calc(33.333% - 20px); 
+        margin-bottom: 20px; 
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .producto img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    .producto h3 {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .producto button {
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
+
+    .producto button:hover {
+        background-color: #e64a19;
+    }
+
+
+    footer {
+        background: linear-gradient(to right, #ff9800, #ff5722); 
+        color: #0a0a0a;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer-col {
+        flex: 1; 
+        margin: 10px; 
+        min-width: 250px; 
+    }
+    
+    footer h1 {
+        font-size: 1.5em;
+        margin: 0 0 10px; 
+    }
+    
+    footer h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px; 
+    }
+    
+    .redes-sociales {
+        list-style-type: none; 
+        padding: 0;
+    }
+    
+    .redes-sociales li {
+        margin: 5px 0; 
+    }
+    
+    .redes-sociales a {
+        color: #fff; 
+        text-decoration: none; 
+    }
+    
+    .redes-sociales a:hover {
+        text-decoration: underline; 
+    }
+    
