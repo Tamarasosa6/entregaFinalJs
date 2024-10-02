@@ -1,22 +1,14 @@
-document.getElementById('menuDropdown').addEventListener('change', function() {
-    let categoria = this.value;
-    localStorage.setItem('categoriaSeleccionada', categoria);
-    mostrarProductosPorCategoria(categoria);
-  });
-  
-  function mostrarProductosPorCategoria(categoria) {
-    fetch('./json/productos.json')
-        .then(response => response.json())
-        .then(productos => {
-            let productosFiltrados = productos.filter(producto => producto.categoria === categoria || categoria === "Todos");
-            mostrarProductos(productosFiltrados);
-        })
-        .catch(error => console.error("Error al cargar los productos: ", error));
+document.getElementById('menuDropdown').addEventListener('change', (event) => {
+  const value = event.target.value;
+  if (value === 'Todos') {
+      mostrarProductos(productosGlobales);
+  } else if (value === 'Remeras') {
+      mostrarProductos(productosGlobales.filter(producto => producto.categoria === 'Remeras'));
+  } else if (value === 'Buzos') {
+      mostrarProductos(productosGlobales.filter(producto => producto.categoria === 'Buzos'));
+  } else if (value === 'Camisetas') {
+      mostrarProductos(productosGlobales.filter(producto => producto.categoria === 'Camisetas'));
+  } else {
+      mostrarProductos(productosGlobales);
   }
-  
-  window.onload = function() {
-    let categoriaGuardada = localStorage.getItem('categoriaSeleccionada') || "Todos";
-    document.getElementById('menuDropdown').value = categoriaGuardada;
-    mostrarProductosPorCategoria(categoriaGuardada);
-  };
-  
+});

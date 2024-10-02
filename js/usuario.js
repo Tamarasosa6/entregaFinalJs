@@ -1,49 +1,40 @@
-document.getElementById('crearCuenta').addEventListener('click', () => {
-    crearCuenta();
-});
+document.getElementById('crearCuenta').addEventListener('click', function() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-const mostrarMensaje = (mensaje, tipo) => {
-    const mensajesDiv = document.getElementById('contenedor-mensajes');
-    mensajesDiv.innerHTML = '';
-
-    const mensajeDiv = document.createElement('div');
-    mensajeDiv.className = tipo === 'error' ? 'mensaje-error' : 'mensaje-success';
-    mensajeDiv.textContent = mensaje;
-    mensajesDiv.appendChild(mensajeDiv);
-
-    setTimeout(() => {
-        if (mensajesDiv.contains(mensajeDiv)) {
-            mensajesDiv.removeChild(mensajeDiv);
-        }
-    }, 3000);
-};
-
-const esNumerica = str => /^\d+$/.test(str);
-
-const crearCuenta = () => {
-    const usuarioInput = document.getElementById('username').value.trim();
-    const contraseña = document.getElementById('password').value;
-
-    if (!usuarioInput) {
-        mostrarMensaje('Por favor, ingresa un nombre de usuario.', 'error');
+    if (username === "" || password === "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Por favor, completa todos los campos.',
+            confirmButtonText: 'Aceptar'
+        });
         return;
     }
 
-    if (!esNumerica(contraseña)) {
-        mostrarMensaje('La contraseña debe ser numérica. Inténtalo de nuevo.', 'error');
+    if (!/^\d+$/.test(password)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'La contraseña debe contener solo números.',
+            confirmButtonText: 'Aceptar'
+        });
         return;
     }
-
-    localStorage.setItem('usuario', usuarioInput);
-    localStorage.setItem('contraseña', contraseña);
-
-    document.getElementById('crear-cuenta').style.display = 'none';
-    document.getElementById('bienvenida').style.display = 'block';
-    document.getElementById('user').textContent = usuarioInput;
 
     
-    document.getElementById('navBar').style.display = 'block';
-    document.getElementById('mainContent').style.display = 'block';
+    const usuario = { username, password };
+    localStorage.setItem('usuario', JSON.stringify(usuario));
 
-    mostrarMensaje(`Cuenta creada exitosamente. Bienvenido/a, ${usuarioInput} a nuestra Tienda!`, 'success');
-};
+    Swal.fire({
+        icon: 'success',
+        title: 'Cuenta creada',
+        text: `Bienvenido/a, ${username}!`,
+        confirmButtonText: 'Aceptar'
+    }).then(() => {
+        document.getElementById('bienvenida').style.display = 'block';
+        document.getElementById('user').innerText = username;
+        document.getElementById('crear-cuenta').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+    });
+});
