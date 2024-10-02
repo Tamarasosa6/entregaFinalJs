@@ -60,7 +60,7 @@ function mostrarNotificacion(mensaje) {
     title: 'Producto agregado',
     text: mensaje,
     confirmButtonText: 'Aceptar',
-    timer: 2000, // Reducido a 1.5 segundos
+    timer: 2000, 
     timerProgressBar: true,
     didOpen: () => {
       Swal.showLoading();
@@ -122,10 +122,10 @@ function finalizarCompra() {
       actualizarCarrito();
       document.getElementById('formCompra').style.display = 'none';
 
-      // Redirigir después de 3 segundos
+      
       setTimeout(() => {
-        window.location.href = 'index.html'; // Asegúrate de que esta sea la ruta correcta a tu archivo index.html
-      }, 3000); // Redirige inmediatamente
+        window.location.href = 'index.html'; 
+      }, 3000); 
     });
   } else {
     Swal.fire({
