@@ -3,73 +3,73 @@
       "id": 1,
       "nombre": "Remera Goku",
       "categoria": "Remeras",
-      "precio": 1200,
+      "precio": 12000,
       "cantidad": 10,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/remeragoku.webp"
     },
     {
       "id": 2,
       "nombre": "Buzo Vegeta",
       "categoria": "Buzos",
-      "precio": 2500,
+      "precio": 25000,
       "cantidad": 5,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/buzovegeta.webp"
     },
     {
       "id": 3,
       "nombre": "Camiseta Piccolo",
       "categoria": "Camisetas",
-      "precio": 1500,
+      "precio": 15000,
       "cantidad": 8,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/CamisetaPiccolo.webp"
     },
     {
       "id": 4,
-      "nombre": "Remera Goku Super Saiyan",
+      "nombre": "Remera Goku Doctrina Egoista",
       "categoria": "Remeras",
-      "precio": 1200,
+      "precio": 12000,
       "cantidad": 10,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/doctrinaegoista.webp"
     },
     {
       "id": 5,
       "nombre": "Buzo Vegeta Super Saiyan",
       "categoria": "Buzos",
-      "precio": 2500,
+      "precio": 25000,
       "cantidad": 5,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/BuzoVegetaSuperSaiyan.webp"
     },
     {
       "id": 6,
-      "nombre": "Camiseta Piccolo Fusion",
+      "nombre": "camiseta Majin Boo",
       "categoria": "Camisetas",
-      "precio": 1500,
+      "precio": 15000,
       "cantidad": 8,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/camisetaMajinBoo.webp"
     },
     {
       "id": 7,
       "nombre": "Remera Goku Niño",
       "categoria": "Remeras",
-      "precio": 1200,
+      "precio": 12000,
       "cantidad": 10,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/goku1.webp"
     },
     {
       "id": 8,
-      "nombre": "Buzo Vegeta Majin",
+      "nombre": "Buzo Goku Blue",
       "categoria": "Buzos",
-      "precio": 2500,
+      "precio": 25000,
       "cantidad": 5,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/gokublue.webp"
     },
     {
       "id": 9,
-      "nombre": "Camiseta Piccolo vs Goku",
+      "nombre": " Camiseta vegeta",
       "categoria": "Camisetas",
-      "precio": 1500,
+      "precio": 15000,
       "cantidad": 8,
-      "imagen": "./assets/dragon ball.jpg"
+      "imagen": "./assets/camisetavegeta.webp"
     }
   ]
   

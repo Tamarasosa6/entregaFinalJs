@@ -13,7 +13,6 @@ body, html {
 
 header {
     width: 100%;
-    color: #2196f3;
     text-align: center;
     padding: 20px;
     border-bottom: 5px solid #ff9800;
@@ -31,7 +30,7 @@ header {
 header h1 {
     font-size: 70px;
     font-family: 'Raleway', sans-serif;
-    text-shadow: 4px 4px 0 #000;
+    text-shadow: 4px 4px 0 yellow;
    
     margin: 0;
     padding: 5px;
@@ -86,6 +85,7 @@ a {
 
 #crear-cuenta button:hover {
     background-color: #1976d2;
+    transform: scale(0.9);
 }
 
 nav {
@@ -172,6 +172,45 @@ main {
 
 .producto button:hover {
     background-color: #e64a19;
+}
+
+#contactoSection {
+    padding: 20px;
+    background-color: rgb(238, 238, 205);
+    border-radius: 10px; 
+    box-shadow: 0 10px 10px  #e64a19;
+}
+
+#contactoSection h1{font-size: 1.5625rem;}
+
+
+#contactoSection h2 {
+    color: #343a40;
+}
+
+#contactoSection p {
+    color: #495057; 
+}
+
+#contactoSection a {
+    color: #007bff;
+}
+
+#contactoSection a:hover {
+    text-decoration: underline;
+}
+
+.form-control {
+    border: 1px solid #ced4da; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
 }
 
 /* Footer */
