@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Añadiendo el listener para el dropdown del menú
+   
     document.getElementById('menuDropdown').addEventListener('change', (event) => {
         const value = event.target.value;
         if (value === 'Todos') {
@@ -17,13 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Función para mostrar la sección de contacto
+
     function mostrarContacto() {
         document.getElementById('mainContent').style.display = 'none';
         document.getElementById('contactoSection').style.display = 'block';
     }
 
-    // Añadiendo el listener para el formulario de contacto
     const contactoForm = document.getElementById('contactoForm');
     if (contactoForm) {
         contactoForm.addEventListener('submit', function(event) {
